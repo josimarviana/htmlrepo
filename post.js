@@ -14,7 +14,7 @@ function fazPost(url, body) {
 }
 
 
-function cadastraUsuario() {
+function cadastraCliente() {
     event.preventDefault()
     let url = "http://localhost:8080/clientes"
     let nome = document.getElementById("nome").value
@@ -23,7 +23,7 @@ function cadastraUsuario() {
     console.log(email)
 
     body = {
-        "name": nome,
+        "nome": nome,
         "email": email
     }
 
